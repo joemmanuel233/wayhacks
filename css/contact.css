@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.highlight {
+  color: #f93827;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-icon {
+  display: none;
+}
+.logo img {
+  padding-top: 8px;
+  height: 25px;
+  width: 25px;
+}
+.nav-active {
+  background-color: #f93827;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+.nav-bar {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  padding: 5px;
+  background-color: #33333371;
+}
+.ul-flex {
+  display: flex;
+}
+.ul-flex li {
+  padding: 8px;
+  margin: auto;
+}
+.ul-flex li a {
+  color: #ffff;
+}
+.ul-flex li:hover {
+  background-color: #333;
+  border-radius: 20px;
+}
+.nav-bar h1 {
+  margin: 0.5rem;
+}
+.page-container {
+  background: url("/images/jon-tyson-vVSleEYPSGY-unsplash.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 90vh;
+  color: #fff;
+  text-align: center;
+}
+.page-container .about-h1 {
+  display: block;
+  align-items: center;
+  padding-top: 30px;
+  margin: auto;
+  padding-top: 18rem;
+  font-size: 2rem;
+}
+.contact-text {
+  text-align: center;
+  padding: 1rem;
+}
+.contact-text h1 {
+  padding: 1rem;
+  color: #f58b81;
+}
+.contact-text p {
+  padding: 1rem;
+}
+.contact {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+.contact-flex {
+  display: flex;
+}
+.social-contact {
+  width: 70%;
+  margin: 3rem;
+}
+.social {
+  display: flex;
+  margin: 1rem;
+}
+.icon {
+  padding: 0.5rem;
+}
+.address {
+  margin: 1rem;
+}
+.all-contact p {
+  padding: 0.5rem;
+}
+
+.all-contact {
+  display: flex;
+  max-width: 300px;
+}
+.form-contact {
+  width: 60%;
+  border-radius: 20px;
+}
+.input {
+  border: 1px #f58a81bb solid;
+  background-color: #e69d97b4;
+  margin: auto;
+  width: 400px;
+  padding: 1.8rem;
+  border-radius: 20px;
+}
+input,
+textarea {
+  text-align: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 300px;
+}
+input,
+textarea:focus {
+  outline: none;
+}
+.btn {
+  margin-left: 8rem;
+  width: 100px;
+}
+footer {
+  background-color: #cf655b54;
+  height: 30px;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 20px;
+  padding: 5px;
+}
+@media (max-width: 1040px) {
+  .page-container {
+    height: 60vh;
+  }
+}

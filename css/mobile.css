@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+body header {
+  height: 100vh;
+}
+div.logo-icon {
+  position: absolute;
+  right: 10%;
+  display: block;
+  text-align: right;
+}
+ul.ul-flex {
+  display: none;
+}
+ul.ul-flex li a {
+  text-align: left;
+}
+header nav {
+  display: block !important;
+  text-align: left;
+}
+.page-content {
+  left: 2%;
+}
+section.about-container {
+  height: 1000px;
+}
+section.testimonies h1 {
+  width: 60%;
+}
+section.testimonies {
+  height: 600px;
+  overflow: hidden;
+  width: 350px;
+}
+div.testimony {
+  display: block;
+}
+div.company-services h1 {
+  width: 50%;
+}
+section.service-container {
+  height: 1000px;
+}
+div.overlay {
+  height: 1000px;
+}
+div.service {
+  top: 15%;
+}
+div.service-link {
+  bottom: 5%;
+  left: 40%;
+}
+/* _____contact mobile */
+
+div.contact-flex {
+  display: block;
+}
+header.page-container {
+  height: 80vh;
+}
+div input,
+div textarea {
+  width: 200px;
+}
+div.input {
+  margin: 0;
+  width: 300px;
+}
+
+button.btn {
+  margin-left: 4.2rem;
+}
+body footer {
+  width: 350px;
+  margin: auto;
+}
+/* _______about css */
+section.about-info {
+  width: 400px;
+}
+div.about-image {
+  display: block;
+}
+div.about-image img {
+  width: 200px;
+  height: 200px;
+  margin-left: 5rem;
+}
+@media (min-width: 390px) {
+  section.about-container {
+    height: 700px;
+  }
+  div.input {
+    margin-left: 1.5rem;
+  }
+}

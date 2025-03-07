@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.fade {
+  display: none;
+}
+li {
+  list-style: none;
+}
+.highlight {
+  color: #f93827;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-icon {
+  display: none;
+}
+.logo img {
+  padding-top: 8px;
+  height: 25px;
+  width: 25px;
+}
+header {
+  background: url("/images/campaign-creators-gMsnXqILjp4-unsplash.jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #ffff;
+  overflow-x: hidden;
+}
+.nav-active {
+  background-color: #f93827;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+.nav-bar {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  padding: 5px;
+  background-color: #33333371;
+}
+.ul-flex {
+  display: flex;
+}
+.ul-flex li {
+  padding: 8px;
+  margin: auto;
+}
+.ul-flex li a {
+  color: #ffff;
+}
+.ul-flex li:hover {
+  background-color: #333;
+  border-radius: 20px;
+}
+.nav-bar h1 {
+  margin: 0.5rem;
+}
+.page-content {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  background-color: #3333339a;
+  max-width: 700px;
+  padding: 1rem;
+  border-radius: 20px;
+  transform: translateX(-800px);
+  transition: 2s ease-in;
+}
+.page-content.active {
+  transform: translateX(0);
+}
+.page-content p {
+  font-size: 1.2rem;
+}
+.page-content h1 {
+  font-style: italic;
+  margin: 0.8rem;
+}
+.qoute {
+  font-size: 1.2rem;
+  max-width: 700px;
+  position: absolute;
+  right: 10%;
+  top: 65%;
+  background-color: #3333339a;
+  padding: 1rem;
+  border-radius: 20px;
+  transform: translateX(1000px);
+  transition: 2s ease-in 1s;
+}
+.qoute h1 {
+  font-style: italic;
+  margin: 0.8rem;
+}
+.qoute.active {
+  transform: translateX(0);
+}
+.about {
+  text-align: center;
+  margin: auto;
+  max-width: 1100px;
+  height: 100%;
+}
+.about-container {
+  background: url("/images/thought-catalog-bj8U389A9N8-unsplash.jpg") no-repeat
+    center center/cover;
+  height: 50vh;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.about-wrap {
+  padding: 1rem;
+  max-width: 1100px;
+  line-height: 1.5rem;
+}
+.about-wrap h1 {
+  margin: 1.2rem;
+}
+.mobile-content {
+  display: none;
+}
+
+.testimonies {
+  max-width: 700px;
+  height: 60vh;
+  margin: auto;
+  position: relative;
+}
+.testimonies h1 {
+  border: 1px #333 solid;
+  border-radius: 20px;
+  padding: 0.8rem;
+  width: 30%;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.testimonies-wrap {
+  display: flex;
+  position: relative;
+}
+.testimony {
+  display: flex;
+  border-radius: 20px;
+  padding: 1rem;
+  position: absolute;
+  background-color: #f58a81bb;
+}
+.testimony p {
+  margin: auto;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 500px;
+  text-align: center;
+}
+.testimony-image {
+  text-align: center;
+}
+.testimony-image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.icon-left {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+}
+.icon-right {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+}
+.company-services {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+.service-container {
+  height: 60vh;
+  margin: 1rem;
+  position: relative;
+}
+.overlay {
+  background: url("/images/cytonn-photography-n95VMLxqM2I-unsplash.jpg")
+    no-repeat center center/cover;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #33333386;
+}
+.company-services h1 {
+  border: 1px #ffff solid;
+  border-radius: 20px;
+  padding: 0.8rem;
+  width: 20%;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  position: absolute;
+}
+.service {
+  color: #ffff;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+}
+.service-link {
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+}
+.service-link a {
+  color: #ffff;
+  background-color: #f58a81bb;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+footer {
+  background-color: #cf655b54;
+  height: 30px;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 20px;
+  padding: 5px;
+}
+@media (max-width: 1040px) {
+  header {
+    height: 70vh;
+  }
+  .about-container {
+    height: 30vh;
+  }
+  .testimonies {
+    height: 30vh;
+  }
+}
